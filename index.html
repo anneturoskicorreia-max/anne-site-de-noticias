@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias - Criador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Portal de Notícias</h1>
+        <p>Escreva e publique suas próprias histórias</p>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Criar Nova Notícia</h2>
+            <form id="news-form">
+                <div class="form-group">
+                    <label for="news-title">Título da Notícia</label>
+                    <input type="text" id="news-title" placeholder="Digite um título chamativo..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="news-category">Categoria</label>
+                    <select id="news-category">
+                        <option value="Geral">Geral</option>
+                        <option value="Tecnologia">Tecnologia</option>
+                        <option value="Esportes">Esportes</option>
+                        <option value="Entretenimento">Entretenimento</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="news-content">Conteúdo da Notícia</label>
+                    <textarea id="news-content" rows="6" placeholder="Escreva o corpo da notícia aqui..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Publicar Notícia</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="feed-section">
+            <h2>Notícias Publicadas</h2>
+            <div id="news-feed">
+                <p class="empty-message">Nenhuma notícia publicada ainda. Seja o primeiro!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portal de Notícias. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
